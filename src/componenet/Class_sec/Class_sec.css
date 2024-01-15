@@ -1,0 +1,122 @@
+.section-title {
+    margin-bottom: 35px;
+    
+  }
+  .section-title span {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .section-title h2 {
+    font-size: 46px;
+    color: #E5BF4A;
+    line-height: 60px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+.class {
+  background: black;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.class__form {
+  height: 620px;
+}
+.class__form form input , form select {
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #444444;
+  background: #ffffff;
+  border: 0.8px solid E5BF4A;
+  margin-bottom: 20px;
+}
+.class__form form input::-webkit-input-placeholder {
+  color: #444444;
+}
+.class__form form input::-moz-placeholder {
+  color: #444444;
+}
+.class__form form input:-ms-input-placeholder {
+  color: #444444;
+}
+.class__form form input::-ms-input-placeholder {
+  color: #444444;
+}
+.class__form form input::placeholder {
+  color: #444444;
+}
+.class__form form .nice-select {
+  float: none;
+  border-radius: 0;
+  border: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+}
+.class__form form .nice-select span {
+  font-size: 15px;
+  color: #444444;
+}
+.class__form form .nice-select .list {
+  margin-top: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.class__form form .nice-select:after {
+  border-bottom: 1.5px solid #111;
+  border-right: 1.5px solid #111;
+  height: 9px;
+  right: 25px;
+  width: 9px;
+}
+.class__form form button {
+  letter-spacing: 2px;
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #444444;
+  background: #E5BF4A;
+  border: none;
+  margin-bottom: 20px;
+
+}
+
+.class__video {
+  height: 720px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* position: absolute;
+  right: 0;
+  top: -50px; */
+  border: 1px solid #E5BF4A;
+  background-image: url(../../images/class-video.jpg);
+}
+.class__video .play-btn {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #f08632;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,50 @@
+
+
+.card{
+    width: 300px;
+    height: 320px;
+    background-color: black;
+    border: none;
+}
+
+ @media only screen and (min-width: 1200px) and (max-width: 3000px) {
+    .main{
+        padding-left: 160px;
+        padding-top: 50px;
+        padding-right: 120px;
+    } 
+}  
+@media only screen and (min-width: 830px) and (max-width: 1200px) {
+    .main{
+        padding-left: 100px;
+        padding-top: 50px;
+        padding-right: 100px;
+    } 
+}
+@media only screen and (min-width: 450px) and (max-width: 830px) {
+    .main{
+        padding-left: 30%;
+        padding-top: 10%;
+    } 
+    
+}
+.main{
+padding-top: 10%;
+
+}
+.card-img-top{
+    height: 220px;
+}
+.card-body{
+    height: 50px;
+}
+.card p{
+    color: #E5BF4A;
+    font-size: x-large;
+}
+.card h3{
+    color: white;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
