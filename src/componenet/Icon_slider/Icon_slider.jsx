@@ -4,9 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Icon_slider.css';
 import '../flaticon.css'
+import { useNavigate } from 'react-router-dom';
 
 const Icon_slider = () => {
     const sliderRef = useRef(null);
+    const navigate =useNavigate();
 
   // Customize settings as per your requirements
   const settings = {

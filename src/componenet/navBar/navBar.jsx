@@ -47,7 +47,7 @@ function navBar() {
                                     <div class="collapse navbar-collapse" id="navbarCollapse">
                                         <div class="navbar-nav     nav">
                                             <a class="nav-item nav-link hover-underline-animation  ps-4 pe-4" onClick={() => navigate("/HomePage")}>Home</a>
-                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/HomePage")}>Cake</a>
+                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Shop")}>Cake</a>
                                             <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/About")}>About</a>
                                             {/* <a href="project.html" class="nav-item nav-link">Project</a> */}
                                             {/* <div class="nav-item dropdown"> */}

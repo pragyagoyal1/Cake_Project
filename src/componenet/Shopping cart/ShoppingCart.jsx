@@ -10,23 +10,14 @@ function Shopping_cart() {
     
     return (
         <>
-            <div className="breadcrumb-option">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-sm-6">
-                            <div className="breadcrumb__text">
-                                <h2>Shopping cart</h2>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6 col-sm-6">
-                            <div className="breadcrumb__links">
-                                <a href="./index.html">Home</a>
-                                <span>Shopping cart</span>
-                            </div>
-                        </div>
+           <div className="container-fluid About__Page__Header About_Main_Img text-white" >
+                <div className="container-fluid About__Page__Header page-header py-5 mb-5">
+                    <div className="container py-5">
+                        <h1 className="display-2 text-white">Shopping Cart</h1>
                     </div>
                 </div>
             </div>
+            
             <section className="shopping-cart spad">
                 <div className="container">
                     <div className="row">
