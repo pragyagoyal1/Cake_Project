@@ -5,7 +5,7 @@ import HomePage from './componenet/Home.jsx'
 import  React  from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shopping_cart from './componenet/Shopping cart/ShoppingCart.jsx'
-
+import About from './componenet/About/About.jsx'
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
         <Route path="/HomePage" element={<HomePage />}/>
 
         <Route path="/Shopping" element={<Shopping_cart/>}/>
-        <Route path="/About" element={<HomePage/>}/>
+        <Route path="/About" element={<About/>}/>
         <Route path="/Contact" element={<HomePage/>}/>
       </Routes>
       <Footer />
