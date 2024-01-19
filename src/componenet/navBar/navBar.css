@@ -58,6 +58,12 @@
     vertical-align: middle;
     margin-left: 8px;
 }
+.btn_2{
+    height:20%;
+    width:50%;
+    font-size: large;
+}
+
 .nav{
     background-color: black;
     padding-left:25% ;

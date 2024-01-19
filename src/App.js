@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Shopping_cart from './componenet/Shopping cart/ShoppingCart.jsx'
 import About from './componenet/About/About.jsx';
 import Shop from './componenet/Shop/Shop.jsx'
+import Contact from './componenet/Contact/Contact.jsx'
 function App() {
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
         <Route path="/Shop" element={<Shop/>}/>
         <Route path="/Shopping" element={<Shopping_cart/>}/>
         <Route path="/About" element={<About/>}/>
-        <Route path="/Contact" element={<HomePage/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

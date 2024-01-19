@@ -49,16 +49,8 @@ function navBar() {
                                             <a class="nav-item nav-link hover-underline-animation  ps-4 pe-4" onClick={() => navigate("/HomePage")}>Home</a>
                                             <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Shop")}>Cake</a>
                                             <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/About")}>About</a>
-                                            {/* <a href="project.html" class="nav-item nav-link">Project</a> */}
-                                            {/* <div class="nav-item dropdown"> */}
-                                                <a class="nav-link  hover-underline-animation ps-4 pe-4"  onClick={() => navigate("/Shopping")}>Shopping Cart</a>
-                                                {/* <div class="dropdown-menu fade-up m-0">
-                                                    <a href="feature.html" class="dropdown-item">Blog</a>
-                                                    <a href="quote.html" class="dropdown-item">blog Details</a>
-                                                    <a href="team.html" class="dropdown-item">Elements</a>
-                                                </div> 
-                                            </div>*/}
-                                            <a href="contact.html" class="nav-item nav-link hover-underline-animation ps-4 pe-4">Contact</a>
+                                            <a class="nav-link  hover-underline-animation ps-4 pe-4"  onClick={() => navigate("/Shopping")}>Shopping Cart</a> 
+                                            <a  class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Contact")}>Contact</a>
                                         </div>
                                     </div>
                                 </nav>
