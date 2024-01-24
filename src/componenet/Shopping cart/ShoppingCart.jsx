@@ -4,7 +4,7 @@ import './ShoppingCart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import Cart_Card from './cart';
-import cartData from './data';
+import {Shop_cart} from '../Shop/CakeCard';
 
 function Shopping_cart() {
     
@@ -33,7 +33,7 @@ function Shopping_cart() {
                                         </div>
                                     <div className='container-fluid Scrollbar_box'>
                                     <Scrollbars>
-                                        {cartData.map((cake) => (
+                                        {Shop_cart.map((cake) => (
                                             <Cart_Card key={cake.id} {...cake} />
                                         ))}</Scrollbars>
                                     </div>

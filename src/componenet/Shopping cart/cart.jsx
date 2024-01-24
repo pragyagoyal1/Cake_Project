@@ -1,9 +1,28 @@
+import React ,{useState} from 'react';
 import './cart.css';
-import './ShoppingCart.css';
+import {Shop_cart} from '../Shop/CakeCard';
 
 
-const Cart_Card = ({ image, title, price, qty}) => (
-    <>
+
+function Cart_Card({ id,image, title, price}) {
+  const [qty, setQty] = useState(1);
+
+  const qtyAdd = () => {
+     setQty(qty + 1);
+  };
+  const qtySub = () => {
+    if (qty>1){
+    setQty(qty - 1);
+    }
+    else{
+      alert("Item must be in the cart to remove");
+    }
+ };
+//  const remove_item=({id,image,title,price}) => {
+//   Shop_cart.remove({ id, image,  title, price ,qty});}
+ 
+return(
+<>
     <div className="items-info">
     <div className="product-img">
       <img src={image} alt="iamge" />
@@ -15,22 +34,22 @@ const Cart_Card = ({ image, title, price, qty}) => (
     </div>
 
     <div className="add-minus-quantity">
-      <button >+</button>
+      <button onClick={qtyAdd} >+</button>
       <input type="text" placeholder={qty} disabled />
-      <button >-</button>
+      <button onClick={qtySub} >-</button>
     </div>
 
     <div className="price">
-      <h3>{price}₹</h3>
+      <h3>{price*qty}₹</h3>
     </div>
 
     <div className="remove-item">
-    <button><i
-        className="fas fa-trash-alt remove"
+    <button ><i
+        className="fas Trash_img "
         ></i></button>
     </div>
   </div>
   <hr />
 </>
-  
-);export default Cart_Card;
+ ) 
+};export default Cart_Card;

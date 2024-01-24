@@ -17,19 +17,7 @@ html {
   --icon-color: #525252;
 }
 
-i {
-  width: 2rem;
-  height: 2rem;
-}
 
-.fa,
-.fas {
-  font-weight: 900;
-  display: grid;
-  place-items: center;
-  font-size: 1.6rem;
-  cursor: pointer;
-}
 
 
 
@@ -241,11 +229,20 @@ header {
   justify-content: flex-end;
   align-items: center;
   margin-right: 5rem;
+background-color: #000000;
+}
+.remove-item button{
+  background-color: #000000;
+  border: none;
 }
 
-.remove-item button {
-  border: none;
-  background-color: transparent;
+.Trash_img{
+  background-image: url('../../images/icon/Trash.jpeg');
+border:none;
+background-size: cover;
+  width: 25px;
+  height: 25px;
+
 }
 
 .card-total {
@@ -285,23 +282,6 @@ header {
   letter-spacing: 1px;
 }
 
-/* hover effects  */
-.fa-trash-alt {
-  color: #ed4848;
-}
-
-.fa-plus:hover {
-  color: #42c157;
-}
-
-.fa-minus:hover {
-  color: #ffb800;
-}
-
-.fa-plus,
-.fa-minus {
-  color: var(--icon-color);
-}
 
 .card-total button:hover {
   background-color: #0077dc;

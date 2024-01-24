@@ -1,38 +1,4 @@
-.breadcrumb-option {
-    padding-top: 60px;
-  }
-  
-  .breadcrumb__text h2 {
-    font-size: 50px;
-    color: #000000;
-    font-weight: 700;
-    font-style: italic;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .breadcrumb__links {
-    text-align: right;
-    padding-top: 15px;
-  }
-  .breadcrumb__links a {
-    font-size: 16px;
-    color: #111111;
-    margin-right: 26px;
-    display: inline-block;
-    position: relative;
-  }
-  .breadcrumb__links a:after {
-    position: absolute;
-    right: -16px;
-    top: 0;
-    content: "|";
-    color: #888888;
-  }
-  .breadcrumb__links span {
-    font-size: 16px;
-    color: #888888;
-    display: inline-block;
-  }
+
   .shopping-cart{
     /* background-image: url('../../images/cart/cart-bg.jpeg'); */
     
@@ -157,17 +123,7 @@
     color: white;
   }
   
-  .remove-item {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 5rem;
-  }
-  
-  .remove-item button {
-    border: 2px solid green;
-    background-color: white;
-  }
+ 
   
   /* responsive media queries  */
   

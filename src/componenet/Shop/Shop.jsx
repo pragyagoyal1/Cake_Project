@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../font.css';
-import './Shop.css';
-import {Cake} from './Cake'
+import '../font.css';
 import {CupCake} from './Cake'
 import {Bread} from './Cake'
 
+import './Shop.css';
+import {Cake} from './Cake' 
 const Shop = () => {
   return (
     <>

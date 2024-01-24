@@ -1,8 +1,10 @@
-import './Shop.css'
-import { CakeData } from './Shop_Data'
+
 import { CupCakeData } from './Shop_Data'
 import { BreadData } from './Shop_Data'
-import CakeCard from './CakeCard'
+import {CakeCard} from './CakeCard'
+import './Shop.css'
+import { CakeData } from './Shop_Data'
+import cart_data from '../Shopping cart/data'
 const Cake = () => {
     
     return (
@@ -42,7 +44,7 @@ const Bread = () => {
             </div>
         </>)
 }
-export {Cake ,CupCake ,Bread};
+export {Cake,Bread,CupCake};
 
 
 
