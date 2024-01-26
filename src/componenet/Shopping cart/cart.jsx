@@ -1,12 +1,11 @@
 import React ,{useState} from 'react';
 import './cart.css';
-import {Shop_cart} from '../Shop/CakeCard';
+import Data from './data'
 
 
-
-function Cart_Card({ id,image, title, price}) {
-  const [qty, setQty] = useState(1);
-
+function Cart_Card({ id,image, title, price,quantity }) {
+  const [qty, setQty] = useState(quantity);
+var total=0;  
   const qtyAdd = () => {
      setQty(qty + 1);
   };
@@ -18,6 +17,10 @@ function Cart_Card({ id,image, title, price}) {
       alert("Item must be in the cart to remove");
     }
  };
+ const subTotal=()=>{
+  total=total+(price*qty);
+  
+ }
 //  const remove_item=({id,image,title,price}) => {
 //   Shop_cart.remove({ id, image,  title, price ,qty});}
  
@@ -52,4 +55,5 @@ return(
   <hr />
 </>
  ) 
-};export default Cart_Card;
+}; export {Cart_Card};
+// };export default Cart_Card  ;

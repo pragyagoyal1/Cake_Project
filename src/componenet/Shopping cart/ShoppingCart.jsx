@@ -1,12 +1,15 @@
 import './cart.css';
 import './ShoppingCart.css';
-
+import React,{useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import Cart_Card from './cart';
+import {Cart_Card} from './cart';
 import {Shop_cart} from '../Shop/CakeCard';
-
+import Data from './data.js';
+import { useNavigate } from 'react-router-dom';
 function Shopping_cart() {
+    const navigate =useNavigate();
+  
     
     return (
         <>
@@ -33,8 +36,8 @@ function Shopping_cart() {
                                         </div>
                                     <div className='container-fluid Scrollbar_box'>
                                     <Scrollbars>
-                                        {Shop_cart.map((cake) => (
-                                            <Cart_Card key={cake.id} {...cake} />
+                                        {Data.map((cake) => (
+                                            <Cart_Card key={cake.id} {...cake}/>
                                         ))}</Scrollbars>
                                     </div>
                                     </div>
@@ -42,12 +45,12 @@ function Shopping_cart() {
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-sm-6">
                                     <div className="continue__btn">
-                                        <a href="#">Continue Shopping</a>
+                                        <a className="continue__btn" onClick={() => navigate("/Shop")}>Continue Shopping</a>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6">
                                     <div className="continue__btn update__btn">
-                                        <a href="#"><i className="fa fa-spinner"></i> Update cart</a>
+                                        <a > Update cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +66,7 @@ function Shopping_cart() {
                             <div className="cart__total">
                                 <h3>Cart total</h3>
                                 <ul>
-                                    <li>Subtotal <span>$ 169.50</span></li>
+                                    <li>Subtotal <span></span></li>
                                     <li>Total <span>$ 169.50</span></li>
                                 </ul>
                                 <a href="#" className="primary-btn">Proceed to checkout</a>

@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 import Shop_cart from '../Shopping cart/data'
 
 
-function CakeCard ({ id,image, item, title, price }) {
+function CakeCard ({ id,image, item, title, price ,quantity}) {
     const [data,setData] = useState(Shop_cart);
-    function Add_to_cart({id},{image},{title},{price}) {
+    function Add_to_cart({id},{image},{title},{price},{quantity}) {
         const existingItem = data.find((item) => item.id === id);
         if (!existingItem){
 
             // Update the array based on your logic
-            const newData = [...data,{ id, image,  title, price }]
-            const qty=1
+            const newData = [...data,{ id, image,  title, price,quantity }]
+            
             
             setData(newData);
             
-            Shop_cart.push({ id, image,  title, price ,qty});}
+            Shop_cart.push({ id, image,  title, price ,quantity});}
             else{
                 alert("This cake is already in the cart")
             }
@@ -35,7 +35,7 @@ function CakeCard ({ id,image, item, title, price }) {
                  <h6>{title}</h6>
                  <div className="product__item__price">{price}</div>
                  <div className="cart_add">
-                    <button onClick={() => Add_to_cart({id},{image},{title},{price})}> Add to cart</button>
+                    <button onClick={() => Add_to_cart({id},{image},{title},{price},{quantity})}> Add to cart</button>
                  </div>
                  {console.log({Shop_cart})}
                  {console.log({data})}
