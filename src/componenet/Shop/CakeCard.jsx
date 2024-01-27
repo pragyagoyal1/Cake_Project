@@ -1,6 +1,7 @@
 import './Shop.css'
 import React, { useState } from 'react';
-import Shop_cart from '../Shopping cart/data'
+import Shop_cart from '../cart/data'
+
 
 
 function CakeCard ({ id,image, item, title, price ,quantity}) {
@@ -18,8 +19,9 @@ function CakeCard ({ id,image, item, title, price ,quantity}) {
             Shop_cart.push({ id, image,  title, price ,quantity});}
             else{
                 alert("This cake is already in the cart")
+                
             }
-            console.log({Shop_cart})
+            
           };
    return( 
    <>
@@ -37,8 +39,7 @@ function CakeCard ({ id,image, item, title, price ,quantity}) {
                  <div className="cart_add">
                     <button onClick={() => Add_to_cart({id},{image},{title},{price},{quantity})}> Add to cart</button>
                  </div>
-                 {console.log({Shop_cart})}
-                 {console.log({data})}
+                
              </div>
          </div>
      </div>

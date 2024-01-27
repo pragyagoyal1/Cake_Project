@@ -4,7 +4,7 @@ import { BreadData } from './Shop_Data'
 import {CakeCard} from './CakeCard'
 import './Shop.css'
 import { CakeData } from './Shop_Data'
-import cart_data from '../Shopping cart/data'
+
 const Cake = () => {
     
     return (

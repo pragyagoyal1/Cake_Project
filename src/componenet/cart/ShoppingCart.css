@@ -214,6 +214,10 @@
     padding: 14px 35px;
     display: inline-block;
   }
+  .continue__btn :hover{
+    cursor: pointer;
+    color:#444444
+  }
   
   .cart__discount {
     margin-bottom: 60px;

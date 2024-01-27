@@ -4,7 +4,7 @@ import Footer from './componenet/footer/Footer'
 import HomePage from './componenet/Home.jsx'
 import  React  from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Shopping_cart from './componenet/Shopping cart/ShoppingCart.jsx'
+import Shopping_cart from './componenet/cart/ShoppingCart.jsx'
 import About from './componenet/About/About.jsx';
 import Shop from './componenet/Shop/Shop.jsx'
 import Contact from './componenet/Contact/Contact.jsx'
