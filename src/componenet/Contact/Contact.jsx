@@ -1,9 +1,10 @@
 
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 import './Contact.css';
 import Header_img from '../../images/hero/h2_hero1.jpg'
 
-const About = () => {
+const Contact = () => {
     return (
         <>
            
@@ -31,10 +32,12 @@ const About = () => {
                                         <i class="fa fa-location-arrow"></i>
                                             <p>795 W 5th St, San Bernardino, CA 92410, USA</p>
                                         </li>
-                                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                                        <li>
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
                                             <p>+1 800-786-1000</p>
                                         </li>
-                                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <li>
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
                                             <p>Sweetcake@support.com</p>
                                         </li>
                                     </ul>
@@ -112,4 +115,4 @@ const About = () => {
         </>
     )
 }
-export default About;
+export default Contact;
