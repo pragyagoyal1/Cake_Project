@@ -2,7 +2,7 @@ import React from 'react';
 import '../font.css';
 import {CupCake} from './Cake'
 import {Bread} from './Cake'
-
+import Icon_slider from '../Icon_slider/Icon_slider';
 import './Shop.css';
 import {Cake} from './Cake' 
 const Shop = () => {
@@ -17,6 +17,7 @@ const Shop = () => {
                     </div>
                 </div>
             </div>
+            <Icon_slider />
             <Cake/>
             <CupCake />
             <Bread />

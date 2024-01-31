@@ -39,12 +39,12 @@ const Icon_slider = () => {
   };
 
   const carouselData = [
-    { id: 1, content: <span className="flaticon-034-chocolate-roll"></span> ,name:"Choco-roll"},
-    { id: 2, content: <span className="flaticon-029-cupcake-3"></span> ,name:"Cupcake"},
-    { id: 3, content: <span className="flaticon-005-pancake"></span> ,name:"Pancake"},
-    { id: 3, content: <span className="flaticon-030-cupcake-2"></span> ,name:"Biscuit"},
-    { id: 4, content: <span className="flaticon-006-macarons"></span> ,name:"Donut"},
-    { id: 5, content: <span className="flaticon-029-cupcake-3"></span> ,name:"bread"},
+    { id: 1, content: <span className="flaticon-034-chocolate-roll"></span> ,name:"Choco-roll" ,pro: "/CakePro"},
+    { id: 2, content: <span className="flaticon-029-cupcake-3"></span> ,name:"Cupcake" ,pro: "/BreadPro"},
+    { id: 3, content: <span className="flaticon-005-pancake"></span> ,name:"Pancake" , pro: "/CakePro"},
+    { id: 3, content: <span className="flaticon-030-cupcake-2"></span> ,name:"Biscuit" ,pro: "/CupCakePro"},
+    { id: 4, content: <span className="flaticon-006-macarons"></span> ,name:"Donut", pro: "/BreadPro"},
+    { id: 5, content: <span className="flaticon-029-cupcake-3"></span> ,name:"bread", pro: "/CupCakePro"},
     // Add more slides as needed
   ];
   const handleNext = () => {
@@ -66,7 +66,7 @@ const Icon_slider = () => {
       {carouselData.map((item) => (
         <div key={item.id}>
         <div className="categories__item col-2">
-                        <div className="categories__item__icon">
+                        <div className="categories__item__icon" onClick={() => navigate(item.pro)}>
                             {item.content}
                             <h4>{item.name}</h4>
                         </div>

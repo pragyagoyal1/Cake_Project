@@ -8,6 +8,9 @@ import About from './componenet/About/About.jsx'
 import Shop from './componenet/Shop/Shop.jsx'
 import Contact from './componenet/Contact/Contact.jsx'
 import Home1 from './componenet/Home/Home1.jsx'
+import {CakePro} from './componenet/Shop/Product.jsx'
+import {CupCakePro} from './componenet/Shop/Product.jsx'
+import {BreadPro} from './componenet/Shop/Product.jsx'
 
 function Layout() {
   const location = useLocation()
@@ -21,6 +24,9 @@ function Layout() {
         <Route path="/Shopping" element={<Shopping_cart />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/CakePro" element={<CakePro />} />
+        <Route path="/CupCakePro" element={<CupCakePro />} />
+        <Route path="/BreadPro" element={<BreadPro />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </>
