@@ -12,7 +12,7 @@ function navBar() {
         <>
          
 
-                <div className="container-fluid header body-bg">
+                <div className="container-fluid header body-bg sticky-top">
                     <div className="row">
                         <div className="col-xl-12">
                             <div className="d-flex justify-content-between flex-wrap align-items-center">
