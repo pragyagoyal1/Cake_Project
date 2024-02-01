@@ -41,10 +41,10 @@ const Icon_slider = () => {
   const carouselData = [
     { id: 1, content: <span className="flaticon-034-chocolate-roll"></span> ,name:"Choco-roll" ,pro: "/RollsPro"},
     { id: 2, content: <span className="flaticon-029-cupcake-3"></span> ,name:"Cupcake" ,pro: "/CupCakePro"},
-    { id: 3, content: <span className="flaticon-005-pancake"></span> ,name:"Pancake" , pro: "/CakePro"},
-    { id: 3, content: <span className="flaticon-030-cupcake-2"></span> ,name:"Biscuit" ,pro: "/CookiesPro"},
-    { id: 4, content: <span className="flaticon-006-macarons"></span> ,name:"Donut", pro: "/DonutPro"},
-    { id: 5, content: <span className="flaticon-029-cupcake-3"></span> ,name:"bread", pro: "/BreadPro"},
+    { id: 3, content: <span className="flaticon-043-cake-7"></span> ,name:"Cakes" , pro: "/CakePro"},
+    { id: 3, content: <span className="flaticon-042-candies"></span> ,name:"Cookies" ,pro: "/CookiesPro"},
+    { id: 4, content: <span className="flaticon-023-doughnut"></span> ,name:"Donut", pro: "/DonutPro"},
+    { id: 5, content: <span className="flaticon-002-cake-14"></span> ,name:"bread", pro: "/BreadPro"},
     // Add more slides as needed
   ];
   const handleNext = () => {

@@ -29,9 +29,9 @@ function Layout() {
         <Route path="/CakePro" element={<CakePro />} />
         <Route path="/CupCakePro" element={<CupCakePro />} />
         <Route path="/BreadPro" element={<BreadPro />} />
-        <Route path="/CakePro" element={<DonutPro />} />
-        <Route path="/CupCakePro" element={<CookiesPro />} />
-        <Route path="/BreadPro" element={<RollsPro />} />
+        <Route path="/DonutPro" element={<DonutPro />} />
+        <Route path="/CookiesPro" element={<CookiesPro />} />
+        <Route path="/RollsPro" element={<RollsPro />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </>

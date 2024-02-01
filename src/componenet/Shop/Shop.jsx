@@ -4,7 +4,10 @@ import {CupCake} from './Cake'
 import {Bread} from './Cake'
 import Icon_slider from '../Icon_slider/Icon_slider';
 import './Shop.css';
-import {Cake} from './Cake' 
+import {Cake} from './Cake'
+import { Donut } from './Cake';
+import { Cookies } from './Cake';
+import { Rolls } from './Cake';
 const Shop = () => {
   return (
     <>
@@ -21,6 +24,10 @@ const Shop = () => {
             <Cake/>
             <CupCake />
             <Bread />
+            <Cookies />
+            <Donut />
+<Rolls />
+            
                           
 
           
