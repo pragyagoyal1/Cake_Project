@@ -5,13 +5,13 @@ import logo from '../../images/logo/logo.png';
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 
-function navBar() {
+function NavBar() {
     const navigate =useNavigate();
 
     return (
         <>
+        <nav>
          
-
                 <div className="container-fluid header body-bg sticky-top">
                     <div className="row">
                         <div className="col-xl-12">
@@ -58,10 +58,10 @@ function navBar() {
                         </div>
                     </div>
                 </div>
-              
-         
+                </nav>   
+          
         </>
     );
 }
 
-export default navBar;
+export default NavBar;

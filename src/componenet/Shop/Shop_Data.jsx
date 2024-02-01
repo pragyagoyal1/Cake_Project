@@ -16,6 +16,24 @@ import bread2 from '../../images/shop/bread/SanwichBread.webp'
 import bread3 from '../../images/shop/bread/Leopard.jpeg'
 import bread4 from '../../images/shop/bread/multigrain.jpg'
 import bread5 from '../../images/shop/bread/bun.jpg'
+import donut1 from '../../images/shop/donut/donut1.jpg'
+import donut2 from '../../images/shop/donut/donut2.jpg'
+import donut3 from '../../images/shop/donut/donut3.jpg'
+import donut4 from '../../images/shop/donut/donut4.jpg'
+import donut5 from '../../images/shop/donut/donut5.jpg'
+import donut6 from '../../images/shop/donut/donut6.jpg'
+import rolls1 from '../../images/shop/roll/roll1.jpg'
+import rolls2 from '../../images/shop/roll/roll2.jpg'
+import rolls3 from '../../images/shop/roll/roll3.jpg'
+import rolls4 from '../../images/shop/roll/roll4.jpg'
+import rolls5 from '../../images/shop/roll/roll5.jpg'
+import rolls6 from '../../images/shop/roll/roll6.jpg'
+import cookies1 from '../../images/shop/cookies/cookies1.jpg'
+import cookies2 from '../../images/shop/cookies/cookies2.jpg'
+import cookies3 from '../../images/shop/cookies/cookies3.jpg'
+import cookies4 from '../../images/shop/cookies/cookies4.jpg'
+import cookies5 from '../../images/shop/cookies/cookies5.jpg'
+import cookies6 from '../../images/shop/cookies/cookies6.jpg'
 
 const CakeData = [
     { id: 1, image: cake1, item: ' CAKE ' ,title: 'Black Forest Cake', price: 500, quantity:1},
@@ -41,6 +59,30 @@ const BreadData = [
     { id: 5, image: bread5, item: ' Bread ' ,title: 'bun Bread', price: 500, quantity:1 },
     { id: 6, image: bread6, item: ' Bread ' ,title: 'Focaccia Bread', price: 500, quantity:1 },
 ];
+const DonutData = [
+    { id: 1, image: donut1, item: ' donut ' ,title: 'Black Forest donut', price: 500, quantity:1},
+    { id: 2, image: donut2, item: ' donut ' ,title: 'Pineapple donut', price: 500, quantity:1 },
+    { id: 3, image: donut3, item: ' donut ' ,title: 'Choco Truffle donut', price: 500, quantity:1 },
+    { id: 4, image: donut4, item: ' donut ' ,title: 'Fruit N Nut donut', price: 500, quantity:1 },
+    { id: 5, image: donut5, item: ' donut ' ,title: 'Rasmali donut', price: 500, quantity:1 },
+    { id: 6, image: donut6, item: ' donut ' ,title: 'Double Choco Chip donut', price: 500, quantity:1 },
+];
+const CookiesData = [
+    { id: 1, image: cookies1, item: ' CuoCAKE ' ,title: 'Pinapple cookies', price: 500, quantity:1},
+    { id: 2, image: cookies2, item: ' cookies ' ,title: 'black forest cookies', price: 500, quantity:1 },
+    { id: 3, image: cookies3, item: ' cookies ' ,title: 'truffle cookies', price: 500, quantity:1 },
+    { id: 4, image: cookies4, item: ' cookies ' ,title: 'rainbow cookies', price: 500, quantity:1 },
+    { id: 5, image: cookies5, item: ' cookies ' ,title: 'fruit cookies', price: 500, quantity:1 },
+    { id: 6, image: cookies6, item: ' cookies ' ,title: 'white forest cookies', price: 500, quantity:1 },
+];
+const RollsData = [
+    { id: 1, image: rolls1, item: ' rolls ' ,title: 'Croissants rolls', price: 500, quantity:1},
+    { id: 2, image: rolls2, item: ' rolls ' ,title: 'Sanwichrolls rolls', price: 500, quantity:1 },
+    { id: 3, image: rolls3, item: ' rolls ' ,title: 'Leopard rolls', price: 500, quantity:1 },
+    { id: 4, image: rolls4, item: ' rolls ' ,title: 'multigrain rolls', price: 500, quantity:1 },
+    { id: 5, image: rolls5, item: ' rolls ' ,title: 'bun rolls', price: 500, quantity:1 },
+    { id: 6, image: rolls6, item: ' rolls ' ,title: 'Focaccia rolls', price: 500, quantity:1 },
+];
 
 
-export {CakeData, CupCakeData, BreadData};
+export {CakeData, CupCakeData, BreadData,DonutData, CookiesData ,RollsData};

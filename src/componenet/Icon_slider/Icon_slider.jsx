@@ -39,12 +39,12 @@ const Icon_slider = () => {
   };
 
   const carouselData = [
-    { id: 1, content: <span className="flaticon-034-chocolate-roll"></span> ,name:"Choco-roll" ,pro: "/CakePro"},
-    { id: 2, content: <span className="flaticon-029-cupcake-3"></span> ,name:"Cupcake" ,pro: "/BreadPro"},
+    { id: 1, content: <span className="flaticon-034-chocolate-roll"></span> ,name:"Choco-roll" ,pro: "/RollsPro"},
+    { id: 2, content: <span className="flaticon-029-cupcake-3"></span> ,name:"Cupcake" ,pro: "/CupCakePro"},
     { id: 3, content: <span className="flaticon-005-pancake"></span> ,name:"Pancake" , pro: "/CakePro"},
-    { id: 3, content: <span className="flaticon-030-cupcake-2"></span> ,name:"Biscuit" ,pro: "/CupCakePro"},
-    { id: 4, content: <span className="flaticon-006-macarons"></span> ,name:"Donut", pro: "/BreadPro"},
-    { id: 5, content: <span className="flaticon-029-cupcake-3"></span> ,name:"bread", pro: "/CupCakePro"},
+    { id: 3, content: <span className="flaticon-030-cupcake-2"></span> ,name:"Biscuit" ,pro: "/CookiesPro"},
+    { id: 4, content: <span className="flaticon-006-macarons"></span> ,name:"Donut", pro: "/DonutPro"},
+    { id: 5, content: <span className="flaticon-029-cupcake-3"></span> ,name:"bread", pro: "/BreadPro"},
     // Add more slides as needed
   ];
   const handleNext = () => {

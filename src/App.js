@@ -11,7 +11,9 @@ import Home1 from './componenet/Home/Home1.jsx'
 import {CakePro} from './componenet/Shop/Product.jsx'
 import {CupCakePro} from './componenet/Shop/Product.jsx'
 import {BreadPro} from './componenet/Shop/Product.jsx'
-
+import { CookiesPro } from './componenet/Shop/Product.jsx'
+import { RollsPro } from './componenet/Shop/Product.jsx'
+import { DonutPro } from './componenet/Shop/Product.jsx'
 function Layout() {
   const location = useLocation()
   return (
@@ -27,6 +29,9 @@ function Layout() {
         <Route path="/CakePro" element={<CakePro />} />
         <Route path="/CupCakePro" element={<CupCakePro />} />
         <Route path="/BreadPro" element={<BreadPro />} />
+        <Route path="/CakePro" element={<DonutPro />} />
+        <Route path="/CupCakePro" element={<CookiesPro />} />
+        <Route path="/BreadPro" element={<RollsPro />} />
       </Routes>
       {location.pathname !== '/' && <Footer />}
     </>
