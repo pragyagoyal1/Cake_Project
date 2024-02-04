@@ -1,20 +1,25 @@
-
 .product {
   padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .product__item {
   margin-bottom: 40px;
   padding: 40px;
+  width: 320px;
 }
-.product__item:hover .product__item__pic  .product__label span {
+
+.product__item:hover .product__item__pic .product__label span {
   background: #f08632;
   color: #ffffff;
 }
+
 .product__item:hover .product__item__text .product__item__price {
   opacity: 0;
   visibility: hidden;
 }
+
 .product__item:hover .product__item__text .cart_add {
   opacity: 1;
   visibility: visible;
@@ -22,19 +27,33 @@
 }
 
 .product__item__pic {
-  height: 270px;
+  height: 200px;
   position: relative;
   background-position: center;
+  width: 250px;
+
 }
-.product__item__pic  .product__label {
+
+.product__item__pic__img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.product__item__pic .product__label {
   position: absolute;
   left: -15;
   bottom: -15px;
   text-align: center;
   width: 100%;
+
 }
-.product__item__pic  .product__label span {
+
+.product__item__pic .product__label span {
   display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Protest Revolution', sans-serif;
   font-size: 14px;
   color: #111111;
   height: 35px;
@@ -43,10 +62,11 @@
   padding: 6px 10px 4px;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 10px rgba(223, 223, 224, 0.7);
-          box-shadow: 0 0 10px rgba(223, 223, 224, 0.7);
+  box-shadow: 0 0 10px rgba(223, 223, 224, 0.7);
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
+  overflow-y: visible;
 }
 
 .product__item__text {
@@ -55,15 +75,21 @@
   position: relative;
   text-decoration: none;
 }
+
 .product__item__text h6 {
   margin-bottom: 16px;
 }
+
 .product__item__text h6 {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Protest Revolution', sans-serif;
+  font-family: 'Single Day', cursive;
   color: #f0e007;
   font-weight: 600;
   font-size: x-large;
   text-transform: uppercase;
 }
+
 .product__item__text .product__item__price {
   color: #f0e007;
   font-weight: 600;
@@ -72,6 +98,7 @@
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+
 .product__item__text .cart_add {
   position: absolute;
   left: 0;
@@ -83,7 +110,8 @@
   opacity: 0;
   visibility: hidden;
 }
-.product__item__text .cart_add  {
+
+.product__item__text .cart_add {
   color: #f0e007;
   font-size: 20px;
   font-weight: 600;
@@ -91,4 +119,67 @@
   border-bottom: 2px solid #f08632;
   padding-bottom: 4px;
 }
-  
+
+.cart_add button {
+  width: 120px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Protest Revolution', sans-serif;
+  cursor: pointer;
+  position: relative;
+  background: white;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+
+  &:after,
+  &:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+
+  &:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid #e5bf4a;
+    border-left: 5px solid #e5bf4a;
+  }
+
+  &:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid #e5bf4a;
+    border-right: 5px solid #e5bf4a;
+  }
+
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    /* background:rgba(0,0,0,.5);
+         color:white; */
+    &:before,
+    &:after {
+
+      width: 100%;
+      height: 100%;
+      /* // border-color:white; */
+    }
+
+  }
+
+}
+
+.product__item__pic__img img {
+  transition: transform .5s ease-in-out;
+}
+
+/* The Transformation */
+.product__item__pic__img:hover img {
+  transform: scale(1.2) rotate(5deg);
+
+}

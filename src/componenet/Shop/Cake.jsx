@@ -10,7 +10,7 @@ const Cake = () => {
     
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {CakeData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}
@@ -23,7 +23,7 @@ const CupCake = () => {
    
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {CupCakeData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}
@@ -36,7 +36,7 @@ const Bread = () => {
    
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {BreadData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}
@@ -49,7 +49,7 @@ const Donut = () => {
    
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {DonutData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}
@@ -62,7 +62,7 @@ const Rolls = () => {
    
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {RollsData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}
@@ -75,7 +75,7 @@ const Cookies = () => {
    
     return (
         <>
-            <div className="row">
+            <div className="row product">
                 {CookiesData.map((product) => (
                     <CakeCard key={product.id} {...product} />
                 ))}

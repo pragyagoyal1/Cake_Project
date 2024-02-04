@@ -25,10 +25,11 @@ function CakeCard ({ id,image, item, title, price ,quantity}) {
           };
    return( 
    <>
-    <div className="col-lg-4 col-md-6 col-sm-6">
+    <div className="col-lg-4 col-md-6 col-sm-6 ">
          <div className="product__item">
              <div className="product__item__pic set-bg">
-                 <img src={image} style={{height:'inherit',width:'100%'}}/>
+             <div className='product__item__pic__img'>'
+                 <img src={image} style={{height:'100%',width:'100%'}}/></div>
                  <div className="product__label">
                      <span> {item} </span>
                  </div>

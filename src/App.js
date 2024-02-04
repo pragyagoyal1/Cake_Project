@@ -14,6 +14,7 @@ import {BreadPro} from './componenet/Shop/Product.jsx'
 import { CookiesPro } from './componenet/Shop/Product.jsx'
 import { RollsPro } from './componenet/Shop/Product.jsx'
 import { DonutPro } from './componenet/Shop/Product.jsx'
+import './App.css';
 function Layout() {
   const location = useLocation()
   return (

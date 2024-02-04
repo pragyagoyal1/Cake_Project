@@ -73,6 +73,8 @@
       color: #E5BF4A;
     display: block;
     font-size: x-large;
+    font-family: 'Dancing Script', cursive;
+  font-family: 'Protest Revolution', sans-serif;
 }
 .hover-underline-animation {
     display: inline-block;

@@ -19,7 +19,7 @@
     position: relative;
   }
   
-  .categories__item:after {
+  /* .categories__item:after {
     position: absolute;
     left: 0;
     right: 0;
@@ -29,15 +29,15 @@
     height: 15px;
     border: 1px solid #f08632;
     border-color: transparent #f08632 #f08632 transparent;
-    content: "";
+    /* content: "";
     -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
             transform: rotate(-135deg);
     opacity: 0;
     -webkit-transition: all, 0.3s;
-    -o-transition: all, 0.3s;
+    -o-transition: all, 0.3s; 
     transition: all, 0.3s;
-  }
+  } */
   .categories__item:hover {
     background: #f08632;
   }
@@ -48,7 +48,9 @@
     color: #ffffff;
   }
   .categories__item:hover h4 {
-    color: #ffffff;
+    color: #E5BF4A;
+    -webkit-text-stroke: 0.5px black;
+    font-size:25px;
   }
   
   .categories__item__icon span {
@@ -65,5 +67,6 @@
     -webkit-transition: all, 0.2s;
     -o-transition: all, 0.2s;
     transition: all, 0.2s;
+    font-family: 'Protest Revolution', sans-serif;
   }
   

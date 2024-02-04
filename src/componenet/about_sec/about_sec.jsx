@@ -2,15 +2,18 @@ import React from 'react';
 import '../font.css';
 import './AboutSec.css';
 import about1 from '../../images/gallery/about1.jpg';
+import { useNavigate } from 'react-router-dom';
+
 function AboutSec () {
+    const navigate=useNavigate();
     return(
         <>  <div className='container-fluid main-img '>
         <div className='container pt-5'>
             <div className='row'>
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-sm-10">
                     <div class="hero-caption ">
-                        <h1 data-animation="fadeInUp" data-delay=".2s">Healthy Made Delicious Cake</h1>
-                        <a href="#" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay=".8s">Order
+                        <h1 >Healthy Made Delicious Cake</h1>
+                        <a  onClick={() => navigate("/Shop")} class="btn_1 hero-btn" >Order
                             Now</a>
                     </div></div></div>
         </div>
