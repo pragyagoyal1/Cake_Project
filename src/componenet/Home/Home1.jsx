@@ -7,7 +7,7 @@ export default function Home1() {
 
   const handleGetStartedClick = () => {
     // Use the navigate function to go to the "/HomePage" route
-    navigate("/HomePage");
+    navigate("/Login");
   };
 
   return (

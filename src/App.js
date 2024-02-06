@@ -14,6 +14,8 @@ import {BreadPro} from './componenet/Shop/Product.jsx'
 import { CookiesPro } from './componenet/Shop/Product.jsx'
 import { RollsPro } from './componenet/Shop/Product.jsx'
 import { DonutPro } from './componenet/Shop/Product.jsx'
+import Login from './componenet/Login/Login1.jsx'
+import SignUp from './componenet/Login/Signup.jsx'
 import './App.css';
 function Layout() {
   const location = useLocation()
@@ -22,6 +24,8 @@ function Layout() {
       {location.pathname !== '/' && <NavBar />}
       <Routes>
         <Route path="/" element={<Home1 />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Shopping" element={<Shopping_cart />} />
