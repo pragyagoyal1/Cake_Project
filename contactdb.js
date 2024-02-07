@@ -8,7 +8,7 @@ mongoose.connect("mongodb://0.0.0.0:27017/Manas")
 })
 
 
-const SignupSchema=new mongoose.Schema({
+const ContactSchema=new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -17,12 +17,14 @@ const SignupSchema=new mongoose.Schema({
         type:String,
         required:true
     },
-    password:{
+    message:{
         type:String,
         required:true
     }
 })
 
-const Signupcollection = mongoose.model("collections",SignupSchema)
 
-module.exports=Signupcollection
+const Contactcollection = mongoose.model("contact",ContactSchema)
+
+
+module.exports=Contactcollection

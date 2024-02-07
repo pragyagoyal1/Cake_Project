@@ -26,6 +26,7 @@ function Login1(){
             .then(res=>{
                 if(res.data=="exist"){
                     history("/HomePage",{state:{id:email}})
+                    history("/Contact", { state: {  email } });
                 }
                 else if(res.data=="notexist"){
                     alert("User have not sign up")

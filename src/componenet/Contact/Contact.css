@@ -89,12 +89,12 @@ body{
   border: 1px solid #e1e1e1;
   background: #fafafa;
   font-size: 18px;
-  color: white;
+  color: black;
   padding-left: 20px;
   margin-bottom: 30px;
 }
 .contact__form form input:last-child {
-  color: white;
+  color:black;
 }
 .contact__form form textarea {
   width: 100%;

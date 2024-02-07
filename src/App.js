@@ -21,7 +21,8 @@ function Layout() {
   const location = useLocation()
   return (
     <>
-      {location.pathname !== '/' && <NavBar />}
+      {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Signup' && <NavBar />}
+      
       <Routes>
         <Route path="/" element={<Home1 />} />
         <Route path="/Login" element={<Login />} />
@@ -38,7 +39,7 @@ function Layout() {
         <Route path="/CookiesPro" element={<CookiesPro />} />
         <Route path="/RollsPro" element={<RollsPro />} />
       </Routes>
-      {location.pathname !== '/' && <Footer />}
+      {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/SignUp' && <Footer />}
     </>
   )
 }

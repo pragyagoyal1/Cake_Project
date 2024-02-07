@@ -1,5 +1,6 @@
 const express = require("express")
-const collection = require("./mongo")
+const Signupcollection  = require("./mongo")
+const Contactcollection =require("./contactdb")
 const cors = require("cors")
 const app = express()
 app.use(express.json())
@@ -14,10 +15,10 @@ app.get("/",cors(),(req,res)=>{
 
 
 app.post("/",async(req,res)=>{
-    const{name,email,password}=req.body
+    const{email}=req.body
 
     try{
-        const check=await collection.findOne({email:email})
+        const check=await Signupcollection.findOne({email:email})
 
         if(check){
             res.json("exist")
@@ -38,21 +39,21 @@ app.post("/",async(req,res)=>{
 app.post("/signup",async(req,res)=>{
     const{name,email,password}=req.body
 
-    const data={
+    const Signupdata={
         name:name,
         email:email,
         password:password
     }
 
     try{
-        const check=await collection.findOne({email:email})
+        const check=await Signupcollection.findOne({email:email})
 
         if(check){
             res.json("exist")
         }
         else{
             res.json("notexist")
-            await collection.insertMany([data])
+            await Signupcollection.insertMany([Signupdata])
         }
 
     }
@@ -60,6 +61,34 @@ app.post("/signup",async(req,res)=>{
         res.json("fail")
     }
 
+})
+
+app.post("/Contact",async(req,res)=>{
+    const{name,email,message}=req.body
+
+    const Contactdata={
+        name:name,
+        email:email,
+        message:message
+    }
+
+  
+    try{
+        const check=await Contactcollection.findOne({email:email})
+
+        if(check){ await Contactcollection.insertMany([Contactdata])
+            res.json("exist")
+        }
+        else{
+            res.json("notexist")
+            await Contactcollection.insertMany([Contactdata])
+        }
+
+    }
+    catch(e){
+        res.json("fail")
+    }
+  
 })
 
 app.listen(8000,()=>{

@@ -1,10 +1,44 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './Contact.css';
 import Header_img from '../../images/hero/h2_hero1.jpg'
+import { useLocation } from 'react-router-dom';
+import axios from 'axios'; // Import axios for making HTTP requests
 
 const Contact = () => {
+    const [name,setName]=useState('')  
+    const [email,setEmail]=useState('')
+    const [message,setMessage]=useState('')
+
+    async function submit(e){
+        e.preventDefault();
+
+        try{
+
+            await axios.post("http://localhost:8000/Contact",{
+                name,email,message
+            })
+            .then(res=>{
+                if(res.data=="exist"){
+                    alert("User already exists")
+                    
+                }
+                else if(res.data=="notexist"){
+                   
+                }
+            })
+            .catch(e=>{
+                alert("wrong details")
+                console.log(e);
+            })
+
+        }
+        catch(e){
+            console.log(e);
+
+        }
+
+    }
     return (
         <>
            
@@ -93,17 +127,17 @@ const Contact = () => {
                         </div>
                         <div class="col-lg-8">
                             <div class="contact__form">
-                                <form action="#">
+                                <form action="#" >
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <input type="text" placeholder="Name"/>
+                                            <input type="text" placeholder="Name"  name = "name" onChange={(e) => { setName(e.target.value) }}/>
                                         </div>
                                         <div class="col-lg-6">
-                                            <input type="text" placeholder="Email"/>
+                                            <input type="text" placeholder="Email" name='email' onChange={(e) => { setEmail(e.target.value) }}/>
                                         </div>
                                         <div class="col-lg-12 pb-5">
-                                            <textarea placeholder="Message"></textarea>
-                                            <button type="submit" class="site-btn">Send Us</button>
+                                            <textarea placeholder="Message" name='message' onChange={(e) => { setMessage(e.target.value) }} ></textarea>
+                                            <button type="submit" class="site-btn" onClick={submit}>Send Us</button>
                                         </div>
                                     </div>
                                 </form>
