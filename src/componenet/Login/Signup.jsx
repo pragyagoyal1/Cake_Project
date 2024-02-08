@@ -44,7 +44,7 @@ const Signup = () => {
     }
   return (
     <>
-   <section class="vh-100 bg-image ">
+   {/* <section class="vh-100 bg-image ">
   <div class="mask d-flex align-items-center h-100 gradient-custom-3">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -98,7 +98,44 @@ const Signup = () => {
       </div>
     </div>
   </div>
-</section>
+</section> */}
+<div class="container1">
+      <div class="row">
+      
+        <div class="col-lg-6"></div>
+    
+    
+        <div class=" d-flex align-items-center justify-content-center right-side" style={{paddingLeft:'570px'}}>
+          <div class="form-2-wrapper1">
+            <div class="logo text-center">
+              <h1 className='heading'>Signup</h1>
+            </div>
+            <h2 class="text-center ">Sign Into Your Account</h2>
+            <form action="#">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="text"  onChange={(e) => { setName(e.target.value) }} name="text" placeholder="Enter Your Name" required />
+              </div>
+              <div class="mb-3 form-box">
+                <input type="email" class="form-control" id="email" onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Enter Your Email" required /> 
+              </div>
+              
+              <div class="mb-3">
+                <input type="password" class="form-control" id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Enter Your Password" required />
+              </div>
+              
+              <button type="submit" class="btn btn-outline-secondary login-btn w-100 " onClick={submit}>Login</button>
+            
+            </form>
+    
+            <p class="text-center register-test mt-3">Hav already an account 
+            <Link to="/Login1" class="button" target="_parent">
+                    <span class="actual-text">&nbsp;Login&nbsp;here&nbsp;</span>
+                    
+            </Link></p>
+          </div>
+        </div>
+      </div>
+    </div>
         </>
   );
 }
