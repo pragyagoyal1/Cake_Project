@@ -1,7 +1,41 @@
+import { useState } from 'react';
+import React from 'react';
 import './Class_sec.css';
+import axios from 'axios';
+const Class_sec=()=> {
+    const [name,setName]=useState('')  
+    const [phone,setPhone]=useState('')
+    const [requirement,setRequirement]=useState('')
 
+    async function submit(e){
+        e.preventDefault();
 
-function Class_sec() {
+        try{
+
+            await axios.post("http://localhost:8000/classregs",{
+                name,phone,requirement
+            })
+            .then(res=>{
+                if(res.data=="exist"){
+                    alert("User already exists")
+                    
+                }
+                else if(res.data=="notexist"){
+                   
+                }
+            })
+            .catch(e=>{
+                alert("wrong details")
+                console.log(e);
+            })
+
+        }
+        catch(e){
+            console.log(e);
+
+        }
+
+    }
     return (
         <>
             <section className="class spad">
@@ -14,15 +48,15 @@ function Class_sec() {
                                     <h2>Made from your <br />own hands</h2>
                                 </div>
                                 <form action="#">
-                                    <input type="text" placeholder="Name" />
-                                    <input type="text" placeholder="Phone" />
-                                    <select>
+                                    <input type="text" placeholder="Name" onChange={(e) => { setName(e.target.value) }} />
+                                    <input type="text" placeholder="Phone" onChange={(e) => { setPhone(e.target.value) }}/>
+                                    {/* <select>
                                         <option value="">Studying Class</option>
                                         <option value="">Writting Class</option>
                                         <option value="">Reading Class</option>
-                                    </select>
-                                    <input type="text" placeholder="Type your requirements" />
-                                    <button type="submit" className="site-btn">registration</button>
+                                    </select> */}
+                                    <input type="text" placeholder="Type your requirements example Cake" onChange={(e) => { setRequirement(e.target.value) }}/>
+                                    <button type="submit" className="site-btn" onClick={submit}>registration</button>
                                 </form>
                             </div>
                         </div>

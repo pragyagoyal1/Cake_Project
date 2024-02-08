@@ -10,7 +10,10 @@
     background: linear-gradient(to right, rgb(100, 96, 104), rgb(63, 70, 83))
 
     }
-    .gradient-custom-4 {
+    .form-outline label{
+        background-color: white;
+    }
+        .gradient-custom-4 {
     /* fallback for old browsers */
     background: black;
     

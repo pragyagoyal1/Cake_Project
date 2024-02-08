@@ -16,6 +16,8 @@ import { RollsPro } from './componenet/Shop/Product.jsx'
 import { DonutPro } from './componenet/Shop/Product.jsx'
 import Login from './componenet/Login/Login1.jsx'
 import SignUp from './componenet/Login/Signup.jsx'
+import Class_sec from './componenet/Class_sec/Class_sec.jsx'
+import AdminPannel from './componenet/Adminpannel/AdminPannel.jsx'
 import './App.css';
 function Layout() {
   const location = useLocation()
@@ -38,6 +40,7 @@ function Layout() {
         <Route path="/DonutPro" element={<DonutPro />} />
         <Route path="/CookiesPro" element={<CookiesPro />} />
         <Route path="/RollsPro" element={<RollsPro />} />
+        <Route path="/AdminPannel" element={<AdminPannel />} />
       </Routes>
       {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/SignUp' && <Footer />}
     </>

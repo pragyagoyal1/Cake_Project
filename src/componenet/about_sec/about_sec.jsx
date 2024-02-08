@@ -13,7 +13,7 @@ function AboutSec () {
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-8 col-sm-10">
                     <div class="hero-caption ">
                         <h1 >Healthy Made Delicious Cake</h1>
-                        <a  onClick={() => navigate("/Shop")} class="btn_1 hero-btn" >Order
+                        <a  onClick={() => navigate("/AdminPannel")} class="btn_1 hero-btn" >Order
                             Now</a>
                     </div></div></div>
         </div>
