@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-mongoose.connect("mongodb://0.0.0.0:27017/Manas")
+mongoose.connect("mongodb://0.0.0.0:27017/CakesNShapes")
 .then(()=>{
     console.log("mongodb connected");
 })

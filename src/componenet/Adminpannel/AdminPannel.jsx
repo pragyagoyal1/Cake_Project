@@ -1,49 +1,43 @@
-// App.js
+import './AdminPannel.css';
+import SignInTable from './SignInTable';
 
-import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
+const AdminPannelNav =() =>{
+  const navigate=useNavigate()
+  return(
+    <>
+      <div className="row ">
+        <div className="col-xl-12">
+          <nav class="navbar navbar-expand-lg   sticky-top p-0" >
 
+            <button type="button" class="navbar-toggler me-4 " data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+              <div class="navbar-nav  admin-Nav   nav" style={{ padding: "0px", margin: "0px" }}>
+                <a class="nav-item nav-link hover-underline-animation  ps-4 pe-4" onClick={() => navigate("/SignInTable")}>Sign In</a>
+                <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/ContactTable")}>Contacts</a>
+                <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/ClassRegTable")}>Registrations</a>
+                <a class="nav-link  hover-underline-animation ps-4 pe-4" onClick={() => navigate("/OrderTable")}>Orders</a>
+                {/* <a  class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("")}>Contact</a> */}
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </>
+  )
+}
 function AdminPannel() {
-  const [data, setData] = useState([]);
+return (
+    <>
+    
+    <SignInTable />
+      
+    </>
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/data');
-      const jsonData = await response.json();
-      setData(jsonData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  return (
-<>    <div className="App">
-      <h1>Data Table</h1>
-      <table >
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item, index) => (
-            <tr key={index}>
-              <td>{item.name}</td>
-              <td>{item.password}</td>
-              <td>{item.email}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div> </>
-  
   );
 }
 
-export default AdminPannel;
+export  {AdminPannel , AdminPannelNav };

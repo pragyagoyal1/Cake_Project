@@ -1,0 +1,26 @@
+.App{
+    
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-right: 20px;
+
+}
+table{
+    border:1px solid rgb(255, 239, 239);
+    
+}
+td{
+
+background-color: white;
+color:#E5BF4A;
+font-size: x-large;
+border: 2px solid black;
+}
+th{
+    
+    background-color: white;
+    border: 2px solid black;
+    color:black;
+    font-size: x-large;
+}

@@ -1,19 +1,4 @@
 
-
-    .form-outline label{
-        background-color: white;
-    }
-        .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: black;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgb(62, 58, 67), rgb(92, 94, 97));
- 
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgb(100, 96, 104), rgb(63, 70, 83))
-    }
    
       .container1{
         background: url('./../../images/background.jpg');
@@ -23,16 +8,23 @@
         background-size: cover;
       }
       .form-2-wrapper1 {
-        background: #00000029;
+        background: #f1c1c129;
         padding: 50px;
         border-radius: 8px;
-        
+        width:540px;
         font-size:large ;
       }
-      input.form-control2{
-        padding: 11px;
-        width:440px;
-        border: none;
+      label {
+        padding-top: 7px;
+        font-size: larger;
+        float: left;
+        width: 180px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        color :black;
+      }
+      input.form-control{      
+        width:250px;
         border: 2px solid #000000b8;
         border-radius: 30px;
         background-color: transparent;
@@ -40,10 +32,28 @@
         font-size:large ;
         color: black;
       }
-      input.form-control2:focus{
+      input.form-control:focus{
         box-shadow: none !important;
         outline: 0px !important;
         background-color: transparent;
+        color:black;
+        
+      }
+      textarea.form-control{
+        width:250px;
+        border: 2px solid #000000b8;
+        border-radius: 30px;
+        height: 100px;
+        background-color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:large ;
+        color: black;
+      }
+      textarea.form-control:focus{
+        box-shadow: none !important;
+        outline: 0px !important;
+        background-color: transparent;
+        color: #000;
         
       }
       button.login-btn{

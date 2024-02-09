@@ -51,6 +51,7 @@ function NavBar() {
                                             <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/About")}>About</a>
                                             <a class="nav-link  hover-underline-animation ps-4 pe-4"  onClick={() => navigate("/Shopping")}>Shopping Cart</a> 
                                             <a  class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Contact")}>Contact</a>
+                                            <a  class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/AdminPannel")}>Admin Pannel</a>
                                         </div>
                                     </div>
                                 </nav>

@@ -16,8 +16,12 @@ import { RollsPro } from './componenet/Shop/Product.jsx'
 import { DonutPro } from './componenet/Shop/Product.jsx'
 import Login from './componenet/Login/Login1.jsx'
 import SignUp from './componenet/Login/Signup.jsx'
-import Class_sec from './componenet/Class_sec/Class_sec.jsx'
-import AdminPannel from './componenet/Adminpannel/AdminPannel.jsx'
+import CheckOut from './componenet/Check Out/CheckOut.jsx'
+import {AdminPannel} from './componenet/Adminpannel/AdminPannel.jsx'
+import ContactTable from './componenet/Adminpannel/ContactTable.jsx'
+import SignInTable from './componenet/Adminpannel/SignInTable.jsx'
+import OrderTable from './componenet/Adminpannel/OrderTable.jsx'
+import ClassRegTable from './componenet/Adminpannel/ClassRegTable.jsx'
 import './App.css';
 function Layout() {
   const location = useLocation()
@@ -41,6 +45,11 @@ function Layout() {
         <Route path="/CookiesPro" element={<CookiesPro />} />
         <Route path="/RollsPro" element={<RollsPro />} />
         <Route path="/AdminPannel" element={<AdminPannel />} />
+        <Route path="/CheckOut" element={<CheckOut />} />
+        <Route path="/ContactTable" element={<ContactTable />} />
+        <Route path="/SignInTable" element={<SignInTable />} />
+        <Route path="/OrderTable" element={<OrderTable />} />
+        <Route path="/ClassRegTable" element={<ClassRegTable />} />
       </Routes>
       {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/SignUp' && <Footer />}
     </>

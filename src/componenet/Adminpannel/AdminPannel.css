@@ -1,0 +1,40 @@
+.App{
+    
+    margin-left: 150px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+h1{
+    font-size: xx-large;
+    color:white;
+    margin-left: 50px;
+}
+.admin-Nav{
+    border:5px solid  white;
+    margin-left: 0px;
+    width:100%;
+}
+.admin-Nav a{
+    margin-left: 150px;
+}
+table{
+    border:1px solid rgb(255, 239, 239);
+    
+}
+td{
+width:300px;
+height:50px;
+background-color: white;
+color:#E5BF4A;
+font-size: x-large;
+border: 2px solid black;
+}
+th{
+    width:300px;
+    height:80px;
+    background-color: white;
+    border: 2px solid black;
+    color:black;
+    font-size: x-large;
+}

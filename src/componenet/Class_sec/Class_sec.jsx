@@ -12,7 +12,7 @@ const Class_sec=()=> {
 
         try{
 
-            await axios.post("http://localhost:8000/classregs",{
+            await axios.post("http://localhost:8000/classregdbs",{
                 name,phone,requirement
             })
             .then(res=>{

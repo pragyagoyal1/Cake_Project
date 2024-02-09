@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-mongoose.connect("mongodb://0.0.0.0:27017/Manas")
+mongoose.connect("mongodb://0.0.0.0:27017/CakesNShapes")
 .then(()=>{
     console.log("mongodb connected");
 })
@@ -24,7 +24,7 @@ const ClassRegSchema=new mongoose.Schema({
 })
 
 
-const ClassRegcollection = mongoose.model("classreg",ClassRegSchema)
+const ClassRegcollection = mongoose.model("classregs",ClassRegSchema)
 
 
 module.exports=ClassRegcollection

@@ -2,8 +2,11 @@ const express = require("express")
 const Signupcollection  = require("./backend/mongo")
 const Contactcollection =require("./backend/contactdb")
 const ClassRegcollection =require("./backend/classRegdb")
-const Logindatacollection =require("./backend/adminlogin")
-const mongoose = require('mongoose');
+const Logindatacollection =require("./backend/adminLogin/SignInTable.js")
+const CheckOutcollection =require('./backend/checkoutdb.jsx')
+const ContactTablecollection =require('./backend/adminLogin/ConatctTable.js')
+const OrderTablecollection =require('./backend/adminLogin/OrderTable.js')
+const ClassRegTablecollection =require('./backend/adminLogin/ClasssRegTable.js')
 const cors = require('cors');
 const app = express()
 app.use(express.json())
@@ -97,7 +100,7 @@ app.post("/Contact",async(req,res)=>{
     }
   
 })
-app.post("/classregs",async(req,res)=>{
+app.post("/classregdbs",async(req,res)=>{
     const{name,phone,requirement}=req.body
 
     const ClassRegdata={
@@ -108,22 +111,17 @@ app.post("/classregs",async(req,res)=>{
 
   
     try{
-        const check=await ClassRegcollection.findOne({email:email})
+        const check=await ClassRegcollection
 
-        if(check){ await ClassRegcollection.insertMany([ClassRegdata])
-            res.json("exist")
-        }
-        else{
-            res.json("notexist")
-            await ClassRegcollection.insertMany([ClassRegdata])
-        }
-
+        await ClassRegcollection.insertMany([ClassRegdata])
+        alert("Done");
     }
     catch(e){
         res.json("fail")
     }
   
 })
+
 app.get('/data', async (req, res) => {
     try {
       const Logindata = await Logindatacollection.find();
@@ -133,6 +131,70 @@ app.get('/data', async (req, res) => {
       res.status(500).json({ message: 'Server Error' });
     }
   });
+  app.get('/contacttable', async (req, res) => {
+    try {
+      const Contactdata = await ContactTablecollection.find();
+      res.json(Contactdata);
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Server Error' });
+    }
+  });
+  app.get('/ordertable', async (req, res) => {
+    try {
+      const Orderdata = await OrderTablecollection.find();
+      res.json(Orderdata);
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Server Error' });
+    }
+  });
+  app.get('/classregtable', async (req, res) => {
+    try {
+      const ClassRegdata = await ClassRegTablecollection.find();
+      res.json(ClassRegdata);
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Server Error' });
+    }
+  });
+
+  app.post("/checkout",async(req,res)=>{
+    const{name,
+        phone,
+        address,
+        product,
+        total_item,
+        total_amount}=req.body
+
+    const CheckOutdata={
+        name:name,
+        phone:phone,
+        address:address,
+        product:product,
+        total_item:total_item,
+        total_amount:total_amount
+    }
+
+  
+    try{
+        const check=await CheckOutcollection
+
+        if(check){ await CheckOutcollection.insertMany([CheckOutdata])
+            res.json("exist")
+        }
+        else{
+            res.json("notexist")
+            await CheckOutcollection.insertMany([CheckOutdata])
+        }
+
+    }
+    catch(e){
+        res.json("fail")
+    }
+  
+})
+
   
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 

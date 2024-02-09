@@ -9,7 +9,9 @@ const ContextCart = () => {
   const { item, clearCart, totalItem, totalAmount } = useContext(CartContext);
 
   const navigate =useNavigate();
-
+  const submit =()=>{
+  navigate("/CheckOut",{state:{totalAmount,totalItem}})
+  }
   return (
     <>
       
@@ -56,20 +58,14 @@ const ContextCart = () => {
                             </div>
                         </div>
                         <div className="col-lg-4">
-                            {/* <div className="cart__discount">
-                                <h3>Discount codes</h3>
-                                <form action="#">
-                                    <input type="text" placeholder="Coupon code" />
-                                    <button type="submit">Apply</button>
-                                </form>
-                            </div> */}
+                        
                             <div className="cart__total">
                                 <h3>Cart total</h3>
                                 <ul>
                                     <li>Total Items <span>{totalItem}</span></li>
                                     <li>Total <span>{totalAmount}</span></li>
                                 </ul>
-                                <a href="#" className="primary-btn">Proceed to checkout</a>
+                                <a href="#" className="primary-btn" onClick={submit}>Proceed to checkout</a>
                             </div>
                         </div>
                     </div>

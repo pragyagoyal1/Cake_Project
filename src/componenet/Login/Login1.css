@@ -7,15 +7,16 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .form-2-wrapper1 {
+      .form-2-wrapper2 {
         background: #00000029;
         padding: 50px;
         border-radius: 8px;
         
         font-size:large ;
       }
-      input.form-control{
+      input.form-control1{
         padding: 11px;
+        width: 380px;
         border: none;
         border: 2px solid #000000b8;
         border-radius: 30px;
@@ -24,7 +25,7 @@
         font-size:large ;
         color: black;
       }
-      input.form-control:focus{
+      input.form-control1:focus{
         box-shadow: none !important;
         outline: 0px !important;
         background-color: transparent;
