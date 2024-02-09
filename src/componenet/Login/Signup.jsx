@@ -45,7 +45,7 @@ const Signup = () => {
   return (
     <>
   
-<div class="container1">
+<div class="container1 container-fluid">
       <div class="row">
       
         <div class="col-lg-6"></div>

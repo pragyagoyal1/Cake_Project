@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const AdminPannelNav =() =>{
   const navigate=useNavigate()
   return(
-    <>
+    <><div className='container-fluid'>
       <div className="row ">
         <div className="col-xl-12">
           <nav class="navbar navbar-expand-lg   sticky-top p-0" >
@@ -25,7 +25,7 @@ const AdminPannelNav =() =>{
             </div>
           </nav>
         </div>
-      </div>
+      </div></div>
     </>
   )
 }

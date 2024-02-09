@@ -2,6 +2,9 @@
     background-color: black;
     
 }
+.logo{
+    width:250px;
+}
 .header{
     padding-top: 15px;
     height: 180px;
@@ -66,7 +69,7 @@
 
 .nav{
     background-color: black;
-    padding-left:25% ;
+    padding-left:30% ;
 }
 .nav a{
     background-color: black;
@@ -81,7 +84,11 @@
     position: relative;
     color: #E5BF4A;
   }
-  
+
+  .navbar-toggler-icon{
+    color:#fff;
+    background-color: #E5BF4A
+  }
   .hover-underline-animation::after {
     content: '';
     position: absolute;

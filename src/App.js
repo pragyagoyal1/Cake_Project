@@ -51,7 +51,7 @@ function Layout() {
         <Route path="/OrderTable" element={<OrderTable />} />
         <Route path="/ClassRegTable" element={<ClassRegTable />} />
       </Routes>
-      {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/SignUp' && <Footer />}
+      {location.pathname !== '/' && location.pathname !== '/Login' && location.pathname !== '/Signup' && <Footer />}
     </>
   )
 }

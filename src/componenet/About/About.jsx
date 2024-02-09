@@ -29,15 +29,18 @@ const About = () => {
                         <div className="about-caption about-caption1">
 
                             <div className="section-tittle section-tittle3 mb-25">
-                                <h2>This is Schilers. Awesome Food Theme.<br/> Purchase it and eat Burgers.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita
-                                    tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in
-                                    reprehen derit in voluptate velit esse cillum.</p>
-                                <p>Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate
-                                    velit esse cillum.</p>
+                            <h2>Hey, Guys Here We are Ready To Serve You.<br/> Purchase it and eat .</h2>
+                                <p>At our bakery, we craft delicious treats with passion and care.
+Indulge in our freshly baked bread, cakes, and pastries, made daily.
+Using only the finest ingredients, we ensure each bite is a delight.
+From classic favorites to unique creations, there's something for everyone.
+Our skilled bakers bring expertise and creativity to every recipe.
+</p>
+                                <p>Experience the warmth and aroma of our bakery, a haven for pastry lovers.
+We take pride in serving our community with irresistible baked goods.
+Whether it's a special occasion or a daily treat, we've got you covered.
+Visit us today and savor the taste of tradition and innovation in every bite.
+Discover why our bakery is more than just a place to satisfy your sweet tooth.</p>
                             </div>
                         </div>
                     </div>

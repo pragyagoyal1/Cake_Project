@@ -5,13 +5,13 @@
     margin-top: 50px;
 
 }
-h1{
+.App h1{
     font-size: xx-large;
     color:white;
     margin-left: 50px;
 }
 .admin-Nav{
-    border:5px solid  white;
+    border:5px solid  white; 
     margin-left: 0px;
     width:100%;
 }
@@ -29,9 +29,11 @@ background-color: white;
 color:#E5BF4A;
 font-size: x-large;
 border: 2px solid black;
+text-align: center;
 }
 th{
     width:300px;
+    text-align: center;
     height:80px;
     background-color: white;
     border: 2px solid black;

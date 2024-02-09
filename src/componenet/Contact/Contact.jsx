@@ -53,60 +53,59 @@ const Contact = () => {
                 <div class="container">
                     <div class="map">
                         <div class="map__iframe">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10784.188505644011!2d19.053119335158936!3d47.48899529453826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1543907528304" height="300" width={'100%'} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        </div>
-                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.7807257160957!2d73.00818474759387!3d26.2797077042173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c315d7a13c3%3A0x14687525b0e90559!2s218%2C%202nd%2C%20B%20Rd%2C%20Gandhi%20Maidan%2C%20Sardarpura%2C%20Jodhpur%2C%20Rajasthan%20342001!5e0!3m2!1sen!2sin!4v1707480480266!5m2!1sen!2sin"height="300" width={'100%'} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div></div>
                     <div class="contact__address">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="contact__address__item">
-                                    <h6>san bernardino</h6>
+                                    <h6>Sardarpura</h6>
                                     <ul>
                                         <li>
                                         <i class="fa fa-location-arrow"></i>
-                                            <p>795 W 5th St, San Bernardino, CA 92410, USA</p>
+                                            <p>218 , 2nd B-road, Sardarpura, jodhpur</p>
                                         </li>
                                         <li>
                                         <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <p>+1 800-786-1000</p>
+                                            <p>+91 734-208-2148</p>
                                         </li>
                                         <li>
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <p>Sweetcake@support.com</p>
+                                            <p>CakesNShapes@support.com</p>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="contact__address__item">
-                                    <h6>Los angeles</h6>
+                                    <h6>Housing Board</h6>
                                     <ul>
                                         <li>
                                         <i class="fa fa-location-arrow"></i>
-                                            <p>639 S Spring St, Los Angeles, CA 90014, USA</p>
+                                            <p>765 ,Sector 9 ,chopasani housing board, jodhpur</p>
                                         </li>
                                         <li><i class="fa fa-phone" aria-hidden="true"></i>
-                                            <p>+1 213-612-3000</p>
+                                            <p>+91 213-612-3000</p>
                                         </li>
                                         <li><i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <p>Sweetcake@support.com</p>
+                                            <p>CakesNShapes@support.com</p>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="contact__address__item">
-                                    <h6>san bernardino</h6>
+                                    <h6>Paota</h6>
                                     <ul>
                                         <li>
                                         <i class="fa fa-location-arrow"></i>
-                                            <p>1000 Lakepoint Dr, Frisco, CO 80443, USA</p>
+                                            <p>26 ,C-road, Paota,jodhpur</p>
                                         </li>
                                         <li><i class="fa fa-phone" aria-hidden="true"></i>
-                                            <p>+1 800-786-1000</p>
+                                            <p>+91 800-786-1098</p>
                                         </li>
                                         <li><i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <p>Sweetcake@support.com</p>
+                                            <p>CakesNShapes@support.com</p>
                                         </li>
                                     </ul>
                                 </div>

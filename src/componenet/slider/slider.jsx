@@ -2,11 +2,11 @@
 import './slider.css';
 import React, { useState } from 'react';
 import Shop_cart from '../cart/data';
-import items1 from '../../images/shop/cart/cart-1.jpg'
+import items1 from '../../images/shop/product-1.jpg'
 import items2 from '../../images/shop/bread/caterpillar.webp'
-import items3 from '../../images/gallery/items3.jpg'
+import items3 from '../../images/shop/CHOCO TRUFFLE CAKE.jpg'
 import items4 from '../../images/shop/roll/roll1.jpg'
-import items5 from '../../images/gallery/items5.jpg'
+import items5 from '../../images/shop/Rasmalai Cake.jpg'
 import items6 from '../../images/shop/donut/donut1.jpg'
 import {Cake} from '../Shop/Cake'
 function CakeCard({id, image,item, title, price,quantity }) {
@@ -54,12 +54,12 @@ function CakeCard({id, image,item, title, price,quantity }) {
 
 const Slider = () => {
   const cakeData = [
-    { id: 1, image:items1, item: ' rolls ' ,title: 'Croissants rolls', price: 500, quantity:1},
-    { id: 2, image:items2, item: ' rolls ' ,title: 'Sanwichrolls rolls', price: 500, quantity:1 },
-    { id: 3, image:items3, item: ' rolls ' ,title: 'Leopard rolls', price: 500, quantity:1 },
-    { id: 4, image:items4, item: ' rolls ' ,title: 'multigrain rolls', price: 500, quantity:1 },
-    { id: 5, image:items5, item: ' rolls ' ,title: 'bun rolls', price: 500, quantity:1 },
-    { id: 6, image:items6, item: ' rolls ' ,title: 'Focaccia rolls', price: 500, quantity:1 },
+    { id: 1, image:items1, item: ' Cup Cake ' ,title: 'Vanila Cup Cake', price: 70, quantity:1},
+    { id: 2, image:items2, item: ' Bread ' ,title: 'Italian Bread (1/2 KG)', price: 249, quantity:1 },
+    { id: 3, image:items3, item: ' Cake ' ,title: 'Orea Cake(1/2 KG)', price: 450, quantity:1 },
+    { id: 4, image:items4, item: ' rolls ' ,title: 'Choco rolls', price: 150, quantity:1 },
+    { id: 5, image:items5, item: ' Cake ' ,title: 'Rasmalai Cake(1 KG)', price: 600, quantity:1 },
+    { id: 6, image:items6, item: ' Donut ' ,title: 'Kit Kat Donut', price: 60, quantity:1 },
   ];
 
   return (<>

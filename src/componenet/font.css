@@ -28,65 +28,15 @@
         transform: rotate(1turn);
     }
 }
-.fa-angle-left:before {
-    content: "\f104";
-}
-
-.fa-angle-right:before {
-    content: "\f105";
-}
-
-.fa-behance:before {
-    content: "\f1b4";
-}
-
-.fa-chevron-left:before {
-    content: "\f053";
-}
-
-.fa-chevron-right:before {
-    content: "\f054";
-}
-
-.fa-comments:before {
-    content: "\f086";
-}
-
-.fa-dribbble:before {
-    content: "\f17d";
-}
 
 .fa-facebook:before {
     content: "\f09a";
-}
-
-.fa-facebook-f:before {
-    content: "\f39e";
-}
-
-.fa-globe:before {
-    content: "\f0ac";
-}
-
-.fa-heart:before {
-    content: "\f004";
 }
 
 .fa-instagram:before {
     content: "\f16d";
 }
 
-.fa-plane:before {
-    content: "\f072";
-}
-
-.fa-play:before {
-    content: "\f04b";
-}
-
-.fa-star:before {
-    content: "\f005";
-}
 
 .fa-twitter:before {
     content: "\f099";

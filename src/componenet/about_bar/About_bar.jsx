@@ -12,9 +12,9 @@ function About_bar() {
 
                                     <h2>Cakes and bakes from the house of Queens!</h2>
                                 </div>
-                                <p>The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are
-                                    The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are
-                                        Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</p>
+                                <p>The "Cake N Shapes" is a Indian Brand that started as a small family business. The owners are
+                                    Mr Vanraj shah and Mr Anuj Kapadia, supported by a staff of 50 employees.
+                                    Experience the warmth and aroma of our bakery, a haven for pastry lovers.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 pt-5">
@@ -22,19 +22,19 @@ function About_bar() {
                                 <div class="about__bar__item">
                                     <p>Cake design</p>
                                     <div class="progress "  >
-                                        <div class="progress-bar " style={{width :"90%"}}></div>
+                                        <div class="progress-bar " style={{ width: "90%" }}></div>
                                     </div>
                                 </div>
                                 <div class="about__bar__item">
                                     <p>Cake Class</p>
                                     <div class="progress " >
-                                        <div class="progress-bar " style={{width :"85%"}}></div>
+                                        <div class="progress-bar " style={{ width: "85%" }}></div>
                                     </div>
                                 </div>
                                 <div class="about__bar__item">
                                     <p>Cake Recipes</p>
                                     <div class="progress " >
-                                        <div class="progress-bar " style={{width :"95%"}} ></div>
+                                        <div class="progress-bar " style={{ width: "95%" }} ></div>
                                     </div>
                                 </div>
                             </div>

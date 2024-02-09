@@ -1,5 +1,5 @@
 import './Footer.css';
-import '../bootstrap.min.css';
+
 import '../font.css';
 import Foot_logo from '../../images/footer-logo.png'
 const Footer = () => {
@@ -23,8 +23,7 @@ const Footer = () => {
                                 <div class="footer__logo">
                                     <a href="#"><img src={Foot_logo} alt="" /></a>
                                 </div>
-                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore dolore magna aliqua.</p>
+                                <p>Freshly baked is the assorted variety of breads,cakes,cupcakes,donut we bring for you to savour. Prepared with the ﬁnest ingredient</p>
                                     <div className='footer-info-left'>
                                     <ul className="footer-social">
                                         <li><a href="#"><i className="fab fa-facebook"></i></a></li>

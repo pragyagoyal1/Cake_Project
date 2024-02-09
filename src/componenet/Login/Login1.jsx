@@ -49,7 +49,7 @@ function Login1(){
   return (
     <>
    
-<div class="container1">
+<div class="container1 container-fluid">
       <div class="row">
       
         <div class="col-lg-6"></div>
@@ -58,7 +58,7 @@ function Login1(){
         <div class=" d-flex align-items-center justify-content-center right-side" style={{paddingLeft:'570px',paddingTop:'100px'}}>
           <div class="form-2-wrapper2">
             <div class="logo text-center">
-              <h1 className='heading'>Logo</h1>
+              <h1 className='heading'>Login</h1>
             </div>
             <h2 class="text-center ">Sign Into Your Account</h2>
             <form action="#">

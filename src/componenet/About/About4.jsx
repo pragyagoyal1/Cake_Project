@@ -21,7 +21,7 @@ const About4 = () => {
                             <h2>Sweet moments are saved as memories.</h2>
                         </div>
                         <a href="https://www.instagram.com/_cakes.n.shapes" className='instagram-page-link' target="_blank" rel="noopener noreferrer">
-  <h4><i className="fab fa-instagram"></i> &nbsp; @sweetcake</h4>
+  <h4><i className="fab fa-instagram"></i> &nbsp; @CakesNShapes</h4>
 </a>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ const ContactTable = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/classregtable');
+      const response = await fetch('http://localhost:8000/classregtable');
       const jsonData = await response.json();
       setData(jsonData);
       
