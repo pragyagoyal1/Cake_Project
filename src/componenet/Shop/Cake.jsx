@@ -10,6 +10,7 @@ const Cake = () => {
     
     return (
         <>
+        
             <div className="row product">
                 {CakeData.map((product) => (
                     <CakeCard key={product.id} {...product} />

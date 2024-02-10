@@ -19,7 +19,7 @@ function NavBar() {
                                 <div className="header-info-left d-none d-sm-block">
                                     <ul className="header-social">
                                         <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.instagram.com/_cakes.n.shapes"><i className="fab fa-instagram"></i></a></li>
                                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                                         <li><a  onClick={() => navigate("/AdminPannel")}><i className="fa fa-user "></i></a></li>
                                     </ul>
@@ -28,7 +28,7 @@ function NavBar() {
                                     <a href="index-2.html"><img className='logo' src={logo} alt="sorry" /></a>
                                 </div>
                                 <div className="header-info-right d-none d-lg-block hover-underline-animation">
-                                    <a href="#" className="btn_2">Call Us: +10 783-346-4378</a>
+                                    <a href="#" className="btn_2">Call Us: +91 783-346-4378</a>
                                 </div>
                             </div>
                         </div>
@@ -47,11 +47,11 @@ function NavBar() {
                                     </button>
                                     <div class="collapse navbar-collapse" id="navbarCollapse">
                                         <div class="navbar-nav     nav">
-                                            <a class="nav-item nav-link hover-underline-animation  ps-4 pe-4" onClick={() => navigate("/HomePage")}>Home</a>
-                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Shop")}>Cake</a>
-                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/About")}>About</a>
-                                            <a class="nav-link  hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Shopping")}>Orders</a>
-                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4" onClick={() => navigate("/Contact")}>Contact</a>
+                                            <a class="nav-item nav-link hover-underline-animation  ps-4 pe-4 navbar" onClick={() => navigate("/HomePage")}>Home</a>
+                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4 navbar"  onClick={() => navigate("/Shop")}>Cake</a>
+                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4 navbar" onClick={() => navigate("/About")}>About</a>
+                                            <a class="nav-link  hover-underline-animation ps-4 pe-4 navbar" onClick={() => navigate("/Shopping")}>Orders</a>
+                                            <a class="nav-item nav-link hover-underline-animation ps-4 pe-4 navbar" onClick={() => navigate("/Contact")}>Contact</a>
                                             
                                         </div>
                                     </div>

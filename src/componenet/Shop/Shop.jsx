@@ -12,9 +12,9 @@ const Shop = () => {
   return (
     <>
     <div className='container-fluid'>
-    
-    <div className="  About__Page__Header About_Main_Img text-white container-fluid " >
-                <div className=" About__Page__Header page-header py-5 mb-5 container-fluid">
+    <div className='container'>
+    <div className="  About__Page__Header About_Main_Img text-white  " >
+                <div className=" About__Page__Header page-header py-5 mb-5 ">
                     <div className="container py-5">
                         <h1 className="display-2 text-white"> Our Products</h1>
                     </div>
@@ -27,6 +27,7 @@ const Shop = () => {
             <Cookies />
             <Donut />
 <Rolls />
+</div>
 </div>
                           
 

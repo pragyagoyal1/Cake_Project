@@ -55,10 +55,10 @@ function Login1(){
         <div class="col-lg-6"></div>
     
     
-        <div class=" d-flex align-items-center justify-content-center right-side" style={{paddingLeft:'570px',paddingTop:'100px'}}>
+        <div class=" d-flex align-items-center justify-content-center right-side login" >
           <div class="form-2-wrapper2">
-            <div class="logo text-center">
-              <h1 className='heading'>Login</h1>
+            <div class=" text-center">
+              <h1 className='heading ' >Login</h1>
             </div>
             <h2 class="text-center ">Sign Into Your Account</h2>
             <form action="#">
