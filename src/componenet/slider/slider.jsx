@@ -42,7 +42,7 @@ function CakeCard({id, image,item, title, price,quantity }) {
              </div>
              <div className="home__cart__item__text">
                  <h6>{title}</h6>
-                 <div className="home__cart__item__price">{price}</div>
+                 <div className="home__cart__item__price">{price}₹</div>
                  <div className="cart_add">
                     <button onClick={() => Add_to_cart({id},{image},{title},{price},{quantity})}> Add to cart</button>
                  </div>
@@ -55,12 +55,12 @@ function CakeCard({id, image,item, title, price,quantity }) {
 
 const Slider = () => {
   const cakeData = [
-    { id: 1, image:items1, item: ' Cup Cake ' ,title: 'Vanila Cup Cake', price: '70 ₹', quantity:1},
-    { id: 2, image:items2, item: ' Bread ' ,title: 'Italian Bread (1/2 KG)', price: '249 ₹', quantity:1 },
-    { id: 3, image:items3, item: ' Cake ' ,title: 'Orea Cake(1/2 KG)', price: '450 ₹', quantity:1 },
-    { id: 4, image:items4, item: ' rolls ' ,title: 'Choco rolls', price: '150 ₹', quantity:1 },
-    { id: 5, image:items5, item: ' Cake ' ,title: 'Rasmalai Cake(1 KG)', price: '600 ₹', quantity:1 },
-    { id: 6, image:items6, item: ' Donut ' ,title: 'Kit Kat Donut', price: '60 ₹', quantity:1 },
+    { id: 1, image:items1, item: ' Cup Cake ' ,title: 'Vanila Cup Cake', price: 70 , quantity:1},
+    { id: 2, image:items2, item: ' Bread ' ,title: 'Italian Bread (1/2 KG)', price: 249 , quantity:1 },
+    { id: 3, image:items3, item: ' Cake ' ,title: 'Orea Cake(1/2 KG)', price: 450 , quantity:1 },
+    { id: 4, image:items4, item: ' rolls ' ,title: 'Choco rolls', price: 150 , quantity:1 },
+    { id: 5, image:items5, item: ' Cake ' ,title: 'Rasmalai Cake(1 KG)', price: 600 , quantity:1 },
+    { id: 6, image:items6, item: ' Donut ' ,title: 'Kit Kat Donut', price: 60 , quantity:1 },
   ];
 
   return (<>

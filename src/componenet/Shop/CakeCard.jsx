@@ -36,7 +36,7 @@ function CakeCard({ id, image, item, title, price, quantity }) {
                     </div>
                     <div className="product__item__text">
                         <h6>{title}</h6>
-                        <div className="product__item__price">{price}$</div>
+                        <div className="product__item__price">{price}₹</div>
                         <div className="cart_add">
                             <button onClick={() => Add_to_cart({ id }, { image }, { title }, { price }, { quantity })}> Add to cart</button>
                         </div>
