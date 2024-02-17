@@ -18,8 +18,8 @@ export default function Home1() {
           <span className="two"></span>
           <span className="three"></span>
           <div className="circle">
-            <h4 className="DrugRadar">Your Wealthy Life Grows Here</h4>
-            <p>One-stop tracker for all your expenses</p>
+            <h4 className="DrugRadar">Healthy Made Delicious Cake </h4>
+            <p>One-stop Fro Your All Bakery Needs</p>
           </div>
         </div>
 

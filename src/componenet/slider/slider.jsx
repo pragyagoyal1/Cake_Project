@@ -1,4 +1,3 @@
-
 import './slider.css';
 import React, { useState } from 'react';
 import Shop_cart from '../cart/data';
@@ -8,7 +7,7 @@ import items3 from '../../images/shop/CHOCO TRUFFLE CAKE.jpg'
 import items4 from '../../images/shop/roll/roll1.jpg'
 import items5 from '../../images/shop/Rasmalai Cake.jpg'
 import items6 from '../../images/shop/donut/donut1.jpg'
-import {Cake} from '../Shop/Cake'
+
 function CakeCard({id, image,item, title, price,quantity }) {
   const [data,setData] = useState(Shop_cart);
   function Add_to_cart({id},{image},{title},{price},{quantity}) {

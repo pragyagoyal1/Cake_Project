@@ -3,7 +3,6 @@ import '../font.css';
 import './AboutSec.css';
 import about1 from '../../images/gallery/about1.jpg';
 import { useNavigate } from 'react-router-dom';
-
 function AboutSec() {
     const navigate = useNavigate();
     return (
@@ -15,7 +14,9 @@ function AboutSec() {
                             <h1 >Healthy Made Delicious Cake</h1>
                             <a onClick={() => navigate("/Shop")} class="btn_1 hero-btn" >Order
                                 Now</a>
-                        </div></div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
             <section className="about-area top-padding body-bg">
@@ -23,7 +24,7 @@ function AboutSec() {
                     <div className="row justify-content-center">
                         <div className="col-xl-6 col-lg-7 col-md-9">
                             <div className="section-tittle text-center line mb-70">
-                                <h2>This is Schilers. Awesome Food Theme. Purchase it and eat Burgers.</h2>
+                                <h2>This is Schilers. Awesome Food Theme. Purchase it and eat.</h2>
                             </div>
                         </div>
                     </div>
