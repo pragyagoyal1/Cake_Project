@@ -63,7 +63,7 @@ const ContextCart = () => {
                                 <h3>Cart total</h3>
                                 <ul>
                                     <li>Total Items <span>{totalItem}</span></li>
-                                    <li>Total <span>{totalAmount}</span></li>
+                                    <li>Total <span>{totalAmount}₹</span></li>
                                 </ul>
                                 <a href="#" className="primary-btn" onClick={submit}>Proceed to checkout</a>
                             </div>

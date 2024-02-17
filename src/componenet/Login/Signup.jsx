@@ -51,10 +51,10 @@ const Signup = () => {
         <div class="col-lg-6"></div>
     
     
-        <div class=" d-flex align-items-center justify-content-center right-side" style={{paddingLeft:'570px'}}>
-          <div class="form-2-wrapper1">
-            <div class="logo text-center">
-              <h1 className='heading'>Signup</h1>
+        <div class=" d-flex  justify-content-center right-side signup" >
+          <div class="form-2-wrapper3 ">
+            <div class=" text-center ">
+              <h1 className='heading text-center'>Signup</h1>
             </div>
             <h2 class="text-center ">Sign Into Your Account</h2>
             <form action="#">

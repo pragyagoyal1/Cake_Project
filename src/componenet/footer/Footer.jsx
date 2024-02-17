@@ -27,8 +27,8 @@ const Footer = () => {
                                     <div className='footer-info-left'>
                                     <ul className="footer-social">
                                         <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/_cakes.n.shapes"><i className="fab fa-instagram"></i></a></li>
+                                        <li><a href=""><i className="fab fa-twitter"></i></a></li>
                                     </ul>
                                     </div>
                             </div>

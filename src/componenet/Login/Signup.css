@@ -1,19 +1,6 @@
 
 
-    .form-outline label{
-        background-color: white;
-    }
-        .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: black;
     
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgb(62, 58, 67), rgb(92, 94, 97));
- 
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgb(100, 96, 104), rgb(63, 70, 83))
-    }
    
       .container1{
         background: url('./../../images/background.jpg');
@@ -22,12 +9,18 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-      .form-2-wrapper1 {
+      .signup{
+        padding-left: 500px;
+        padding-top: 100px;
+      
+      }
+      .form-2-wrapper3 {
         background: #00000029;
         padding: 50px;
         border-radius: 8px;
-        
+        padding-top: 100px;
         font-size:large ;
+        
       }
       input.form-control2{
         padding: 11px;
