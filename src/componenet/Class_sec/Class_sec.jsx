@@ -7,8 +7,34 @@ const Class_sec=()=> {
     const [phone,setPhone]=useState('')
     const [requirement,setRequirement]=useState('')
 
-    async function submit(e){
+    const validatePhone = (phoneNumber) => {
+        // Simple validation for a 10-digit phone number
+        const phoneRegex = /^\d{10}$/;
+        return phoneRegex.test(phoneNumber);
+      };
+    
+      const validateRequirement = (requirement) => {
+        // Validate requirement based on your criteria
+        return requirement.trim() !== '';
+      };
+    
+      async function submit(e) {
         e.preventDefault();
+    
+        if (!name.trim()) {
+          alert("Name is required");
+          return;
+        }
+    
+        if (!validatePhone(phone)) {
+          alert("Invalid phone number");
+          return;
+        }
+    
+        if (!validateRequirement(requirement)) {
+          alert("Requirement cannot be empty");
+          return;
+        }
 
         try{
 

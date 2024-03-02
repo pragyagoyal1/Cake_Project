@@ -12,8 +12,34 @@ const Signup = () => {
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
 
-    async function submit(e){
-        e.preventDefault();
+    const validateEmail = (email) => {
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+    const validatePassword = (password) => {
+      // Validate password length or any other criteria
+      return password.length >= 6;
+    };
+    const submit = async (e) => {
+      e.preventDefault();
+  
+      if (!name || !email || !password) {
+        alert("All fields are required");
+        return;
+      }
+  
+      if (!validateEmail(email)) {
+        alert("Invalid email format");
+        return;
+      }
+  
+      if (!validatePassword(password)) {
+        alert("Password should be at least 6 characters long");
+        return;
+      }
+  
+    
 
         try{
 
@@ -45,28 +71,28 @@ const Signup = () => {
   return (
     <>
   
-<div class="container1 container-fluid">
+<div class="container_signup container-fluid">
       <div class="row">
       
         <div class="col-lg-6"></div>
     
     
         <div class=" d-flex  justify-content-center right-side signup" >
-          <div class="form-2-wrapper3 ">
+          <div class="form-2-wrapper4 ">
             <div class=" text-center ">
               <h1 className='heading text-center'>Signup</h1>
             </div>
             <h2 class="text-center ">Sign Into Your Account</h2>
             <form action="#">
             <div class="mb-3">
-                <input type="text" class="form-control2" id="text"  onChange={(e) => { setName(e.target.value) }} name="text" placeholder="Enter Your Name" required />
+                <input type="text" class="form-control3" id="text"  onChange={(e) => { setName(e.target.value) }} name="text" placeholder="Enter Your Name" required />
               </div>
               <div class="mb-3 form-box">
-                <input type="email" class="form-control2" id="email" onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Enter Your Email" required /> 
+                <input type="email" class="form-control3" id="email" onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Enter Your Email" required /> 
               </div>
               
               <div class="mb-3">
-                <input type="password" class="form-control2" id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Enter Your Password" required />
+                <input type="password" class="form-control3" id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Enter Your Password" required />
               </div>
               
               <button type="submit" class="btn btn-outline-secondary login-btn w-100 " onClick={submit}>Login</button>

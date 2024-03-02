@@ -10,8 +10,34 @@ const Contact = () => {
     const [email,setEmail]=useState('')
     const [message,setMessage]=useState('')
 
-    async function submit(e){
+    const validateEmail = (email) => {
+        // Basic email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      };
+    
+      const validateMessage = (message) => {
+        // Validate message based on your criteria
+        return message.trim() !== '';
+      };
+    
+      async function submit(e) {
         e.preventDefault();
+    
+        if (!name.trim()) {
+          alert("Name is required");
+          return;
+        }
+    
+        if (!validateEmail(email)) {
+          alert("Invalid email format");
+          return;
+        }
+    
+        if (!validateMessage(message)) {
+          alert("Message cannot be empty");
+          return;
+        }
 
         try{
 

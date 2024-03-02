@@ -16,18 +16,42 @@ function CheckOut() {
   const product = JSON.stringify(titles);
 
 
+  const validatePhone = (phoneNumber) => {
+    // Simple validation for a 10-digit phone number
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phoneNumber);
+  };
+
+  const validateAddress = (address) => {
+    // Validate address based on your criteria
+    return address.trim() !== '';
+  };
+
   useEffect(() => {
     if (location.state) {
       const { totalAmount, totalItem } = location.state;
-      // id and totalItem are the values passed from ContextCart
       setTotalAmount(totalAmount);
       setTotalItem(totalItem);
-      alert(titles)
     }
   }, [location.state]);
 
   async function submit(e) {
     e.preventDefault();
+
+    if (!name.trim()) {
+      alert("Name is required");
+      return;
+    }
+
+    if (!validatePhone(phone)) {
+      alert("Invalid phone number");
+      return;
+    }
+
+    if (!validateAddress(address)) {
+      alert("Address is required");
+      return;
+    }
     try {
       await axios.post('http://localhost:8000/checkout', {
         name,
@@ -37,7 +61,7 @@ function CheckOut() {
         total_item: totalItem,
         total_amount: totalAmount
       });
-      alert("data");
+      alert("Sucessful");
       // Handle response
     } catch (error) {
       console.error('Error submitting checkout:', error);

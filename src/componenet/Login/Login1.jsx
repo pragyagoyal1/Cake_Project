@@ -15,8 +15,29 @@ function Login1(){
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
 
-    async function submit(e){
-        e.preventDefault();
+    const validateEmail = (email) => {
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+  
+    const validatePassword = (password) => {
+      // Validate password length or any other criteria
+      return password.length >= 6;
+    };
+  
+    const submit = async (e) => {
+      e.preventDefault();
+  
+      if (!validateEmail(email)) {
+        alert("Invalid email format");
+        return;
+      }
+  
+      if (!validatePassword(password)) {
+        alert("Password should be at least 6 characters long");
+        return;
+      }
 
         try{
 
@@ -49,7 +70,7 @@ function Login1(){
   return (
     <>
    
-<div class="container1 container-fluid">
+<div class="container_login container-fluid">
       <div class="row">
       
         <div class="col-lg-6"></div>
