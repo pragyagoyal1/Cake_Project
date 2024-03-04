@@ -21,7 +21,7 @@ function NavBar() {
                                         <li><a href="#"><i className="fab fa-facebook"></i></a></li>
                                         <li><a href="https://www.instagram.com/_cakes.n.shapes"><i className="fab fa-instagram"></i></a></li>
                                         <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a  onClick={() => navigate("/AdminPannel")}><i className="fa fa-user "></i></a></li>
+                                        <li><a  onClick={() => navigate("/AdminLogin")}><i className="fa fa-user "></i></a></li>
                                     </ul>
                                 </div>
                                 <div className="logo">

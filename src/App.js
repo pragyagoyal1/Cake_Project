@@ -22,6 +22,7 @@ import ContactTable from './componenet/Adminpannel/ContactTable.jsx'
 import SignInTable from './componenet/Adminpannel/SignInTable.jsx'
 import OrderTable from './componenet/Adminpannel/OrderTable.jsx'
 import ClassRegTable from './componenet/Adminpannel/ClassRegTable.jsx'
+import AdminLogin from './componenet/Adminpannel/login.jsx'
 import './App.css';
 function Layout() {
   const location = useLocation()
@@ -45,6 +46,7 @@ function Layout() {
         <Route path="/CookiesPro" element={<CookiesPro />} />
         <Route path="/RollsPro" element={<RollsPro />} />
         <Route path="/AdminPannel" element={<AdminPannel />} />
+        <Route path="/AdminLogin" element={<AdminLogin />} />
         <Route path="/CheckOut" element={<CheckOut />} />
         <Route path="/ContactTable" element={<ContactTable />} />
         <Route path="/SignInTable" element={<SignInTable />} />
